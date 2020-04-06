@@ -70,22 +70,50 @@
         <div>
             <img src="img/party_planner.png" alt="Party Planner" />
             <h4>Party Planner</h4>
-            <p>User Interface Project</p>
+            <p>User Interface Project.<p/>
+            <p>HTML5, CSS3, LESS, JavaScript (ES6), GitHub, BootStrap</p>
+            <p>Built a simple and responsive marketing website for the party planner app 
+            which allows users to plan parties for their friends. Project completed with a team of 2 User Interface 
+            Developers and 4 days to plan and build. I was responsible for the design and development of the landing 
+            page and the navigation bar.</p>
+            <!-- https://homepartyplanner.netlify.com/index.html
+            HTML5, CSS3, LESS, JavaScript (ES6), GitHub, BootStrap
+            https://github.com/build-party-planner-project-week/BW-Party-Planner-UI-1 -->
         </div>
         <div>
             <img src="img/foodie_fun_app.png" alt="Foodie Fun App" />
             <h4>Foodie Fun App</h4>
-            <p>Front End Project</p>
+            <p>Front End Project.</p>
+            <p>JavaScript(ES6), CSS3, React, Redux, Formik, Axios, Jest</p>
+            <p>Built an app that allows a user to save restaurants they’ve visited and add a review 
+            so that they can remember their experience. Project completed with a team of 5 Front End React Developers and 
+            4 days to plan and build. I was responsible for state management, some design tweaks, and ajax management.</p>
+            <!-- https://foodiefunapp.netlify.com/
+            JavaScript(ES6), CSS3, React, Redux, Formik, Axios, Jest
+            https://github.com/build-week-foodie-fun/FE -->
         </div>
         <div>
             <img src="img/droom.png" alt="Droom" />
             <h4>Droom</h4>
-            <p>Back End Project</p>
+            <p>Back End Project.</p>
+            <p>React, GitHub, Sqlite, Postgres, Bcrypt, Json Web Token, Knex</p>
+            <p>Served as the Team Lead for a cross-functional team. Built the backend for an app that allows
+            a user to swipe right to like a job listing and left to pass. Also allows a secondary user to create job listings 
+            and swipe right to like a potential employee and left to pass. Backend completed in 2 days, Project completed in 4 
+            days to plan and build. I was responsible for building the entire backend as well as running daily standup meetings 
+            and managing the project through time management.</p>
+            <!-- React, GitHub, Sqlite, Postgres, Bcrypt, Json Web Token, Knex
+            https://documenter.getpostman.com/view/8921227/SW7Z4ULY
+            https://github.com/BW-Droom/backend -->
         </div>
         <div>
             <img src="img/connect_our_kids.png" alt="Connect Our Kids" />
             <h4>Connect Our Kids</h4>
-            <p>Full Stack Project</p>
+            <p>Full Stack Project.</p>
+            <p>Google BigQuery, AWS Lambda, Serverless Framework, NodeJS, and React</p>
+            <p>Worked with a cross-functional team to build "Impact Dashboard", a green-field web application 
+            that solves a specific problem for social workers.</p>
+            <!-- Google BigQuery, AWS Lambda, Serverless Framework, NodeJS, and React -->
         </div>
     </section>
     <!-- Technology Skills --> <hr/>
@@ -155,20 +183,19 @@
         </div>
         <div>
             <h3>Send Me a Message</h3>
-            <form>
-                <label>Name</label>
-                <input/>
-                <label>E-Mail</label>
-                <input/>
-                <label>Website</label>
-                <input/>
-                <label>How can I help you?</label>
-                <input/>
+            <form action="https://formspree.io/xyydgjpg" method="post">
+                <input type="text" name="name" placeholder="Full Name" required/>
+                <input type="email" name="email" placeholder="Your E-mail" required/>
+                <input type="text" name="website" placeholder="Your Website"/>
+                <textarea name="message" placeholder="How can I help you?"></textarea>
                 <label>I would like to recieve updates, tips, and tools to help me
                 improve the visibility and efficiency of my business. </label>
-                <input type="radio"/>
-                <input type="radio"/>
-                <button>Send</button>
+                <label>Yes:</label>
+                <input type="radio" name="optin" value="Yes"/>
+                <label>No:</label>
+                <input type="radio" name="optin" value="No"/>
+                <button type="reset" name="reset">Clear</button>
+                <button type="submit" name="submit">Send</button>
             </form>
         </div>
     </section>
