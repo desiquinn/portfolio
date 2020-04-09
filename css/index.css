@@ -150,3 +150,122 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+header .nav_bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .nav_bar .logo {
+  width: 100px;
+  height: 100px;
+}
+header .nav_bar .nav_links {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+header .nav_bar .nav_links a {
+  text-decoration: none;
+}
+header .hero {
+  background-image: url(../img/purple_brick_bg.png);
+  height: 560px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+}
+header .hero .big_desi {
+  height: 500px;
+}
+header .hero h1,
+header .hero h2 {
+  color: #FFFFFF;
+}
+.cta_one {
+  border: solid 1px #222222;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .port_intro {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .port_featured {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .port_featured .featured_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: space-between;
+}
+main .port_featured .featured_list .featured_item {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .port_featured .featured_list .featured_item .featured_img {
+  width: 100%;
+}
+main .port_tech {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .port_tech .tech_list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .port_tech .tech_list .tech_item {
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+}
+main .cta_two {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .contact_section {
+  width: 95%;
+  display: flex;
+  justify-content: space-around;
+}
+main .contact_section .contact_form {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .contact_section .contact_form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+footer {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
