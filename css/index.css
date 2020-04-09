@@ -182,6 +182,16 @@ header .hero h1,
 header .hero h2 {
   color: #FFFFFF;
 }
+.home_page {
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.home_page .wip_img {
+  width: 20%;
+}
 .cta_one {
   border: solid 1px #222222;
   height: 100px;
@@ -261,6 +271,12 @@ main .contact_section .contact_form form {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+.hire_me {
+  text-align: center;
+}
+.new_project {
+  text-align: center;
 }
 footer {
   height: 100px;
