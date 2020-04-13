@@ -150,6 +150,19 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+h1 {
+  font-family: 'Playfair Display', serif;
+  color: #2f0a42;
+}
+h2 {
+  font-family: 'Playfair Display', serif;
+}
+h3 {
+  font-family: 'Roboto', sans-serif;
+}
+h4 {
+  font-family: 'Roboto', sans-serif;
+}
 header .nav_bar {
   display: flex;
   justify-content: space-between;
