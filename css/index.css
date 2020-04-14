@@ -150,18 +150,61 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+html {
+  font-size: 62.5%;
+}
 h1 {
   font-family: 'Playfair Display', serif;
   color: #2f0a42;
+  font-size: 3rem;
 }
 h2 {
   font-family: 'Playfair Display', serif;
+  color: #2f0a42;
+  font-size: 2.5rem;
 }
 h3 {
   font-family: 'Roboto', sans-serif;
+  color: #222222;
+  font-size: 2rem;
+  font-weight: 700;
 }
 h4 {
   font-family: 'Roboto', sans-serif;
+  color: #222222;
+  font-size: 1.6rem;
+}
+p {
+  font-family: 'Roboto', sans-serif;
+  color: #222222;
+  font-size: 1.6rem;
+}
+@keyframes linkhover {
+  from {
+    color: #222222;
+  }
+  to {
+    color: #98d4eb;
+  }
+}
+a {
+  font-family: 'Roboto', sans-serif;
+  color: #222222;
+  font-size: 1.6rem;
+}
+a:hover {
+  color: #98d4eb;
+  animation-name: linkhover;
+  animation-duration: 0.5s;
+}
+a i {
+  color: #2f0a42;
+  font-size: 3rem;
+}
+a i:hover {
+  color: #98d4eb;
+  animation-name: linkhover;
+  animation-duration: 0.5s;
 }
 header .nav_bar {
   display: flex;
@@ -192,7 +235,7 @@ header .hero .big_desi {
   height: 500px;
 }
 header .hero h1,
-header .hero h2 {
+header .hero p {
   color: #FFFFFF;
 }
 .home_page {
