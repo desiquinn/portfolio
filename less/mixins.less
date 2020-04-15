@@ -1,8 +1,141 @@
-// Buttons
+@keyframes linkhover {
+    from {color: @black;}
+    to {color: @light-blue;}
+};
 
-// CTA Buttons
+@keyframes buttonhover {
+    from {background-color: @dark-purple;
+    color: @black;}
+    tp {background-color: @light-blue;
+    color: @white;}
+}
+// Buttons
+.button_style(@bg_color, @txt_color){
+    height: 40px;
+    width: 150px;
+    padding: 10px auto;
+    background-color: @bg_color;
+    color: @txt_color;
+    border: none;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-family: @body-font;
+    font-size: 1.4rem;
+    font-weight: 600;
+
+    &:hover {
+        background-color: @light-blue;
+        animation-name: buttonhover;
+        animation-duration: .5s;
+        color: @white;
+    };
+};
 
 // Form Fields
+.form_style(){
+    input[type=text], input[type=email] {
+        width: 100%;
+        margin: 10px auto;
+        padding: 15px;
+        font-family: FontAwesome, @body-font;
+        font-size: 1.4rem;
+        border: solid 1px @light-blue;
+        outline: none;
+        border-radius: 4px;
 
-// Section Spacing
+        &:focus {
+            border: solid 3px @light-purple;
+        };
+    };
 
+    textarea {
+        width: 100%;
+        height: 100px;
+        margin: 10px auto;
+        padding: 15px;
+        font-family: FontAwesome, @body-font;
+        font-size: 1.4rem;
+        border: solid 1px @light-blue;
+        outline: none;
+        border-radius: 4px;
+        resize: none;
+
+        &:focus {
+            border: solid 3px @light-purple;
+        };
+    };
+
+    .checkbox {
+        display: flex;
+        align-items: center;
+        margin: 10px;
+        padding: 10px 0;
+
+        input[type=checkbox] {
+            opacity: 0;
+        };
+
+        label::before, label::after {
+            content: " ";
+            // display: inline-block;
+            position: absolute;
+        };
+
+        label::before {
+            height: 16px;
+            width: 16px;
+            border: 1px solid @light-blue;
+            left: 0px;
+            top: 1px;
+        };
+
+        label::after {
+            height: 4px;
+            width: 9px;
+            border-left: 2px solid @black;
+            border-bottom: 2px solid @black;
+            transform: rotate(-45deg);
+            left: 4px;
+            top: 5px;
+        };
+
+        label {
+            height: auto;
+            font-family: @body-font;
+            font-size: 1.4rem;
+            color: @black;
+            position: relative;
+            // display: inline-block;
+            padding-left: 22px;
+        };
+
+        input[type="checkbox"] + label::after {
+            content: none;
+        };
+
+        input[type="checkbox"]:checked + label::after {
+            content: " ";
+        };
+
+        input[type="checkbox"]:focus + label::before {
+            outline: @light-purple auto 5px;
+        };
+    };
+
+    .form_buttons {
+        display: flex;
+        justify-content: center;
+    };
+};
+
+
+// Cards
+.card_style(@bg_color, @txt_color) {
+    width: 25%;
+    height: auto;
+    padding: 20px;
+    margin: 20px;
+    background-color: @bg_color;
+    border-radius: 4px;
+    color: @txt_color;
+};

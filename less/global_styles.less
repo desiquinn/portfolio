@@ -33,10 +33,10 @@ p {
     font-size: 1.6rem;
 };
 
-@keyframes linkhover {
-    from {color: @black;}
-    to {color: @light-blue;}
-};
+// @keyframes linkhover {
+//     from {color: @black;}
+//     to {color: @light-blue;}
+// };
 
 a {
     font-family: @body-font;
@@ -63,6 +63,14 @@ a {
             animation-duration: .5s;
         };  
     };
+};
+
+button {
+    .button_style(@dark-purple, @white)
+};
+
+.cta_button {
+    .button_style(@burnt-orange, @black);
 };
 
 

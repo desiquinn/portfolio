@@ -26,6 +26,24 @@
   font-display: swap;
   src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmWUlvAw.ttf) format('truetype');
 }
+@keyframes linkhover {
+  from {
+    color: #222222;
+  }
+  to {
+    color: #98d4eb;
+  }
+}
+@keyframes buttonhover {
+  from {
+    background-color: #2f0a42;
+    color: #222222;
+  }
+  tp {
+    background-color: #98d4eb;
+    color: #FFFFFF;
+  }
+}
 html,
 body,
 div,
@@ -179,14 +197,6 @@ p {
   color: #222222;
   font-size: 1.6rem;
 }
-@keyframes linkhover {
-  from {
-    color: #222222;
-  }
-  to {
-    color: #98d4eb;
-  }
-}
 a {
   font-family: 'Roboto', sans-serif;
   color: #222222;
@@ -206,6 +216,44 @@ a i:hover {
   animation-name: linkhover;
   animation-duration: 0.5s;
 }
+button {
+  height: 40px;
+  width: 150px;
+  padding: 10px auto;
+  background-color: #2f0a42;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+button:hover {
+  background-color: #98d4eb;
+  animation-name: buttonhover;
+  animation-duration: 0.5s;
+  color: #FFFFFF;
+}
+.cta_button {
+  height: 40px;
+  width: 150px;
+  padding: 10px auto;
+  background-color: #fe4a49;
+  color: #222222;
+  border: none;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.cta_button:hover {
+  background-color: #98d4eb;
+  animation-name: buttonhover;
+  animation-duration: 0.5s;
+  color: #FFFFFF;
+}
 header .nav_bar {
   display: flex;
   justify-content: space-between;
@@ -219,9 +267,11 @@ header .nav_bar .nav_links {
   width: 50%;
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 header .nav_bar .nav_links a {
   text-decoration: none;
+  text-transform: uppercase;
 }
 header .hero {
   background-image: url(../img/purple_brick_bg.png);
@@ -273,13 +323,19 @@ main .port_featured {
   align-items: center;
 }
 main .port_featured .featured_list {
+  height: auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: space-between;
+  justify-content: space-around;
 }
 main .port_featured .featured_list .featured_item {
-  width: 30%;
+  width: 25%;
+  height: auto;
+  padding: 20px;
+  margin: 20px;
+  background-color: #98d4eb;
+  border-radius: 4px;
+  color: #222222;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -326,6 +382,93 @@ main .contact_section .contact_form {
 main .contact_section .contact_form form {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+}
+.contact_form {
+  width: 30%;
+}
+.contact_form .form_title {
+  margin: 20px auto;
+}
+.contact_form .port_form input[type=text],
+.contact_form .port_form input[type=email] {
+  width: 100%;
+  margin: 10px auto;
+  padding: 15px;
+  font-family: FontAwesome, 'Roboto', sans-serif;
+  font-size: 1.4rem;
+  border: solid 1px #98d4eb;
+  outline: none;
+  border-radius: 4px;
+}
+.contact_form .port_form input[type=text]:focus,
+.contact_form .port_form input[type=email]:focus {
+  border: solid 3px #da99ed;
+}
+.contact_form .port_form textarea {
+  width: 100%;
+  height: 100px;
+  margin: 10px auto;
+  padding: 15px;
+  font-family: FontAwesome, 'Roboto', sans-serif;
+  font-size: 1.4rem;
+  border: solid 1px #98d4eb;
+  outline: none;
+  border-radius: 4px;
+  resize: none;
+}
+.contact_form .port_form textarea:focus {
+  border: solid 3px #da99ed;
+}
+.contact_form .port_form .checkbox {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  padding: 10px 0;
+}
+.contact_form .port_form .checkbox input[type=checkbox] {
+  opacity: 0;
+}
+.contact_form .port_form .checkbox label::before,
+.contact_form .port_form .checkbox label::after {
+  content: " ";
+  position: absolute;
+}
+.contact_form .port_form .checkbox label::before {
+  height: 16px;
+  width: 16px;
+  border: 1px solid #98d4eb;
+  left: 0px;
+  top: 1px;
+}
+.contact_form .port_form .checkbox label::after {
+  height: 4px;
+  width: 9px;
+  border-left: 2px solid #222222;
+  border-bottom: 2px solid #222222;
+  transform: rotate(-45deg);
+  left: 4px;
+  top: 5px;
+}
+.contact_form .port_form .checkbox label {
+  height: auto;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.4rem;
+  color: #222222;
+  position: relative;
+  padding-left: 22px;
+}
+.contact_form .port_form .checkbox input[type="checkbox"] + label::after {
+  content: none;
+}
+.contact_form .port_form .checkbox input[type="checkbox"]:checked + label::after {
+  content: " ";
+}
+.contact_form .port_form .checkbox input[type="checkbox"]:focus + label::before {
+  outline: #da99ed auto 5px;
+}
+.contact_form .port_form .form_buttons {
+  display: flex;
   justify-content: center;
 }
 .hire_me {

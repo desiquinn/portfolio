@@ -21,7 +21,7 @@
                     Resumé
                 </a>
                 <a href="#contact">Contact</a>
-                <a href="./hire_me.html"><button class="cta_button_0">Hire Me!</button></a>
+                <a href="./hire_me.html"><button class="cta_button">Hire Me</button></a>
             </div>
         </nav>
         <!-- Hero -->
@@ -43,7 +43,7 @@
             that will help you reach more people and give you time to
             provide quality experiences for more customers.</p>
         </div>
-        <a href="./new_project.html"><button class="cta_button_1">Get Started</button></a>
+        <a href="./new_project.html"><button class="cta_button">Get Started</button></a>
     </div>
 
     <main>
@@ -201,8 +201,8 @@
         <p>There are two ways you can start working with me.  Hire me to join a team in your company full time.
         Or partner with me on a new project to increase the visibility and efficiency of your business.</p>
         <div>
-            <a href="./hire_me.html"><button class="cta_button_2">Hire Me</button></a>
-            <a href="./new_project.html"><button class="cta_button_1">Start New Project</button></a>
+            <a href="./hire_me.html"><button class="cta_button_1">Hire Me</button></a>
+            <a href="./new_project.html"><button class="cta_button">Start New Project</button></a>
         </div>
     </section>
     <!-- Contact Form -->
@@ -216,23 +216,22 @@
             <p>linkedin.com/in/desiree-morris</p>
         </div>
         <div class="contact_form">
-            <h3>Send Me a Message</h3>
-            <form action="https://formspree.io/xyydgjpg" method="post">
-                <input type="text" name="name" placeholder="Full Name" required/>
-                <input type="email" name="email" placeholder="Your E-mail" required/>
-                <input type="text" name="website" placeholder="Your Website"/>
-                <textarea name="message" placeholder="How can I help you?"></textarea>
-                <div>
-                    <label>I would like to recieve updates, tips, and tools to help me
-                    improve the visibility and efficiency of my business. </label>
-                    <label>Yes:</label>
-                    <input type="radio" name="optin" value="Yes"/>
-                    <label>No:</label>
-                    <input type="radio" name="optin" value="No"/>
+            <h3 class="form_title">Send Me A Message</h3>
+            <form class="port_form" action="https://formspree.io/xyydgjpg" method="post">
+                <input type="text" name="name" placeholder="&#xf007     Name" required/>
+                <input type="email" name="email" placeholder="&#xf0e0     E-mail" required/>
+                <input type="text" name="website" placeholder="&#xf109    Website"/>
+                <textarea name="message" placeholder="Your message ..."></textarea>
+                <div class="checkbox">
+                    <input type="checkbox" id="checkbox_1" name="optin" value="Yes"/>
+                    <label for="checkbox_1">
+                        Send me updates, tips, and tools to my email that will help me improve 
+                        the visibility and efficiency of my business.
+                    </label>
                 </div>
-                <div>
+                <div class="form_buttons">
                     <button type="reset" name="reset">Clear</button>
-                    <button type="submit" name="submit">Send</button>
+                    <button class="cta_button" type="submit" name="submit">Send</button>
                 </div>
             </form>
         </div>
