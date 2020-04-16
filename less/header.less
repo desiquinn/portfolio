@@ -1,13 +1,18 @@
 header {
     
     .nav_bar {
+        width: 100%;
+        height: 75px;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        background-color: rgba(255, 255, 255, 0.7);
+        position: fixed;
+        top: 0;
 
         .logo {
-            width: 100px;
-            height: 100px;
+            width: 75px;
+            height: auto;
         };
 
         .nav_links {
@@ -25,8 +30,9 @@ header {
 
     .hero {
         background-image: url(../img/purple_brick_bg.png);
-        height: 560px;
+        height: 600px;
         display: flex;
+        margin-top: 75px;
         flex-direction: row-reverse;
         justify-content: center;
         align-items: center;
@@ -35,8 +41,32 @@ header {
             height: 500px;
         };
 
-        h1,p {
-            color: @white;
+
+        .tag_line {
+            margin-top: 215px;
+            margin-right: 20px;
+            padding-right: 50px;
+            border-right: 5px solid @light-blue;
+            height: 255px;
+            width: 30%;
+            text-align: right;
+
+            h1,p {
+                color: @white;
+            };
+            
+            h1 {
+                margin-bottom: 30px;
+                font-size: 5rem;
+                display: flex;
+                flex-direction: column;
+            };
+
+            p {
+                font-size: 3rem;
+                display: flex;
+                flex-direction: column;
+            };
         };
     };
 };
