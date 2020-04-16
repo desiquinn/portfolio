@@ -1,17 +1,77 @@
+html {
+    font-size: 62.5%;
+};
+
 h1 {
     font-family: @title-font;
     color: @dark-purple;
+    font-size: 3rem;
 };
 
 h2 {
     font-family: @title-font;
+    color: @dark-purple;
+    font-size: 2.5rem;
 };
 
 h3 {
     font-family: @body-font;
+    color: @black;
+    font-size: 2rem;
+    font-weight: 700;
 };
 
 h4 {
     font-family: @body-font;
+    color: @black;
+    font-size: 1.6rem;
 };
+
+p {
+    font-family: @body-font;
+    color: @black;
+    font-size: 1.4rem;
+};
+
+// @keyframes linkhover {
+//     from {color: @black;}
+//     to {color: @light-blue;}
+// };
+
+a {
+    font-family: @body-font;
+    color: @black;
+    font-size: 1.6rem; 
+
+    &:hover {
+        color: @light-blue;
+        animation-name: linkhover;
+        animation-duration: .5s;
+    };
+
+    // &:visited {
+    //     color: @light-purple;
+    // };
+
+    i {
+        color: @dark-purple;
+        font-size: 2.0rem;
+    
+        &:hover {
+            color: @light-blue;
+            animation-name: linkhover;
+            animation-duration: .5s;
+        };  
+    };
+};
+
+button {
+    .button_style(@dark-purple, @white)
+};
+
+.cta_button {
+    .button_style(@burnt-orange, @black);
+};
+
+
 

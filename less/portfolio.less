@@ -17,14 +17,13 @@ main {
         align-items: center;
 
         .featured_list {
+            height: auto;
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: space-between;
-            
+            justify-content: space-around;            
 
             .featured_item {
-                width: 30%;
+                .card_style(@light-blue, @black);
                 display: flex;
                 flex-direction: column;
                 align-items: center;

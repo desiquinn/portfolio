@@ -26,6 +26,24 @@
   font-display: swap;
   src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmWUlvAw.ttf) format('truetype');
 }
+@keyframes linkhover {
+  from {
+    color: #222222;
+  }
+  to {
+    color: #98d4eb;
+  }
+}
+@keyframes buttonhover {
+  from {
+    background-color: #2f0a42;
+    color: #222222;
+  }
+  tp {
+    background-color: #98d4eb;
+    color: #FFFFFF;
+  }
+}
 html,
 body,
 div,
@@ -150,40 +168,121 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+html {
+  font-size: 62.5%;
+}
 h1 {
   font-family: 'Playfair Display', serif;
   color: #2f0a42;
+  font-size: 3rem;
 }
 h2 {
   font-family: 'Playfair Display', serif;
+  color: #2f0a42;
+  font-size: 2.5rem;
 }
 h3 {
   font-family: 'Roboto', sans-serif;
+  color: #222222;
+  font-size: 2rem;
+  font-weight: 700;
 }
 h4 {
   font-family: 'Roboto', sans-serif;
+  color: #222222;
+  font-size: 1.6rem;
+}
+p {
+  font-family: 'Roboto', sans-serif;
+  color: #222222;
+  font-size: 1.4rem;
+}
+a {
+  font-family: 'Roboto', sans-serif;
+  color: #222222;
+  font-size: 1.6rem;
+}
+a:hover {
+  color: #98d4eb;
+  animation-name: linkhover;
+  animation-duration: 0.5s;
+}
+a i {
+  color: #2f0a42;
+  font-size: 2rem;
+}
+a i:hover {
+  color: #98d4eb;
+  animation-name: linkhover;
+  animation-duration: 0.5s;
+}
+button {
+  height: 40px;
+  width: 150px;
+  padding: 10px auto;
+  background-color: #2f0a42;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+button:hover {
+  background-color: #98d4eb;
+  animation-name: buttonhover;
+  animation-duration: 0.5s;
+  color: #FFFFFF;
+}
+.cta_button {
+  height: 40px;
+  width: 150px;
+  padding: 10px auto;
+  background-color: #fe4a49;
+  color: #222222;
+  border: none;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.cta_button:hover {
+  background-color: #98d4eb;
+  animation-name: buttonhover;
+  animation-duration: 0.5s;
+  color: #FFFFFF;
 }
 header .nav_bar {
+  width: 100%;
+  height: 75px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: rgba(255, 255, 255, 0.7);
+  position: fixed;
+  top: 0;
 }
 header .nav_bar .logo {
-  width: 100px;
-  height: 100px;
+  width: 75px;
+  height: auto;
 }
 header .nav_bar .nav_links {
   width: 50%;
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 header .nav_bar .nav_links a {
   text-decoration: none;
+  text-transform: uppercase;
 }
 header .hero {
   background-image: url(../img/purple_brick_bg.png);
-  height: 560px;
+  height: 600px;
   display: flex;
+  margin-top: 75px;
   flex-direction: row-reverse;
   justify-content: center;
   align-items: center;
@@ -191,9 +290,29 @@ header .hero {
 header .hero .big_desi {
   height: 500px;
 }
-header .hero h1,
-header .hero h2 {
+header .hero .tag_line {
+  margin-top: 215px;
+  margin-right: 20px;
+  padding-right: 50px;
+  border-right: 5px solid #98d4eb;
+  height: 255px;
+  width: 30%;
+  text-align: right;
+}
+header .hero .tag_line h1,
+header .hero .tag_line p {
   color: #FFFFFF;
+}
+header .hero .tag_line h1 {
+  margin-bottom: 30px;
+  font-size: 5rem;
+  display: flex;
+  flex-direction: column;
+}
+header .hero .tag_line p {
+  font-size: 3rem;
+  display: flex;
+  flex-direction: column;
 }
 .home_page {
   height: 550px;
@@ -206,11 +325,22 @@ header .hero h2 {
   width: 20%;
 }
 .cta_one {
-  border: solid 1px #222222;
+  border-bottom: 2px solid #da99ed;
+  background-color: #da99ed;
   height: 100px;
+  margin-bottom: 50px;
+  padding: 0 15%;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.cta_one .cta_text {
+  margin-right: 20px;
+}
+.cta_one .cta_text .value {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 5px;
 }
 main {
   display: flex;
@@ -230,13 +360,19 @@ main .port_featured {
   align-items: center;
 }
 main .port_featured .featured_list {
+  height: auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: space-between;
+  justify-content: space-around;
 }
 main .port_featured .featured_list .featured_item {
-  width: 30%;
+  width: 25%;
+  height: auto;
+  padding: 20px;
+  margin: 20px;
+  background-color: #98d4eb;
+  border-radius: 4px;
+  color: #222222;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -285,6 +421,93 @@ main .contact_section .contact_form form {
   flex-direction: column;
   justify-content: center;
 }
+.contact_form {
+  width: 30%;
+}
+.contact_form .form_title {
+  margin: 20px auto;
+}
+.contact_form .port_form input[type=text],
+.contact_form .port_form input[type=email] {
+  width: 100%;
+  margin: 10px auto;
+  padding: 15px;
+  font-family: FontAwesome, 'Roboto', sans-serif;
+  font-size: 1.4rem;
+  border: solid 1px #98d4eb;
+  outline: none;
+  border-radius: 4px;
+}
+.contact_form .port_form input[type=text]:focus,
+.contact_form .port_form input[type=email]:focus {
+  border: solid 3px #da99ed;
+}
+.contact_form .port_form textarea {
+  width: 100%;
+  height: 100px;
+  margin: 10px auto;
+  padding: 15px;
+  font-family: FontAwesome, 'Roboto', sans-serif;
+  font-size: 1.4rem;
+  border: solid 1px #98d4eb;
+  outline: none;
+  border-radius: 4px;
+  resize: none;
+}
+.contact_form .port_form textarea:focus {
+  border: solid 3px #da99ed;
+}
+.contact_form .port_form .checkbox {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  padding: 10px 0;
+}
+.contact_form .port_form .checkbox input[type=checkbox] {
+  opacity: 0;
+}
+.contact_form .port_form .checkbox label::before,
+.contact_form .port_form .checkbox label::after {
+  content: " ";
+  position: absolute;
+}
+.contact_form .port_form .checkbox label::before {
+  height: 16px;
+  width: 16px;
+  border: 1px solid #98d4eb;
+  left: 0px;
+  top: 1px;
+}
+.contact_form .port_form .checkbox label::after {
+  height: 4px;
+  width: 9px;
+  border-left: 2px solid #222222;
+  border-bottom: 2px solid #222222;
+  transform: rotate(-45deg);
+  left: 4px;
+  top: 5px;
+}
+.contact_form .port_form .checkbox label {
+  height: auto;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.4rem;
+  color: #222222;
+  position: relative;
+  padding-left: 22px;
+}
+.contact_form .port_form .checkbox input[type="checkbox"] + label::after {
+  content: none;
+}
+.contact_form .port_form .checkbox input[type="checkbox"]:checked + label::after {
+  content: " ";
+}
+.contact_form .port_form .checkbox input[type="checkbox"]:focus + label::before {
+  outline: #da99ed auto 5px;
+}
+.contact_form .port_form .form_buttons {
+  display: flex;
+  justify-content: center;
+}
 .hire_me {
   text-align: center;
 }
@@ -292,9 +515,13 @@ main .contact_section .contact_form form {
   text-align: center;
 }
 footer {
-  height: 100px;
+  height: 200px;
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+footer .social_icons {
+  margin: 10px;
 }
