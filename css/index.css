@@ -174,12 +174,12 @@ html {
 h1 {
   font-family: 'Playfair Display', serif;
   color: #2f0a42;
-  font-size: 3rem;
+  font-size: 5rem;
 }
 h2 {
   font-family: 'Playfair Display', serif;
   color: #2f0a42;
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 h3 {
   font-family: 'Roboto', sans-serif;
@@ -299,20 +299,18 @@ header .hero .tag_line {
   width: 30%;
   text-align: right;
 }
-header .hero .tag_line h1,
-header .hero .tag_line p {
-  color: #FFFFFF;
-}
 header .hero .tag_line h1 {
   margin-bottom: 30px;
   font-size: 5rem;
   display: flex;
   flex-direction: column;
+  color: #98d4eb;
 }
 header .hero .tag_line p {
   font-size: 3rem;
   display: flex;
   flex-direction: column;
+  color: #FFFFFF;
 }
 .home_page {
   height: 550px;
@@ -348,18 +346,36 @@ main {
   align-items: center;
 }
 main .port_intro {
-  width: 75%;
+  width: 50%;
+  margin: 50px auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+main .port_intro h2 {
+  margin-bottom: 10px;
+}
+main .port_intro h3 {
+  margin-bottom: 20px;
+}
+main .port_intro p {
+  text-align: center;
+  margin-bottom: 10px;
 }
 main .port_featured {
-  width: 95%;
+  width: 100%;
   display: flex;
+  margin-top: 50px;
+  padding: 50px 0;
   flex-direction: column;
   align-items: center;
+  background-color: #98d4eb;
+}
+main .port_featured h2 {
+  margin-bottom: 20px;
 }
 main .port_featured .featured_list {
+  width: 90%;
   height: auto;
   display: flex;
   flex-wrap: wrap;
@@ -379,15 +395,32 @@ main .port_featured .featured_list .featured_item {
 }
 main .port_featured .featured_list .featured_item .featured_img {
   width: 100%;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+main .port_featured .featured_list .featured_item h3 {
+  margin-bottom: 5px;
+}
+main .port_featured .featured_list .featured_item .project_type {
+  margin-bottom: 10px;
+}
+main .port_featured .featured_list .featured_item .tech_used {
+  margin-bottom: 20px;
+  color: #2f0a42;
+  font-weight: 600;
 }
 main .port_tech {
-  width: 95%;
+  width: 100%;
+  height: 250px;
+  margin-bottom: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-around;
+  background-color: #da99ed;
 }
 main .port_tech .tech_list {
-  width: 100%;
+  width: 95%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -400,35 +433,65 @@ main .port_tech .tech_list .tech_item {
   text-align: center;
 }
 main .cta_two {
-  width: 50%;
+  width: 30%;
+  margin: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-main .contact_section {
-  width: 95%;
+main .cta_two h2 {
+  margin-bottom: 20px;
+}
+main .cta_two p {
+  text-align: center;
+  margin: 20px 0;
+}
+main .cta_two .cta_two_buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+.contact_section {
+  width: 80%;
+  margin: 50px auto;
+  padding-top: 50px;
   display: flex;
   justify-content: space-around;
+  border-top: solid 2px #98d4eb;
 }
-main .contact_section .contact_form {
+.contact_section .contact_info {
   width: 40%;
+}
+.contact_section .contact_info h2 {
+  margin-bottom: 100px;
+  text-align: center;
+}
+.contact_section .contact_info p {
+  margin: 20px 0;
+  font-size: 1.8rem;
+}
+.contact_section .contact_info p i {
+  color: #2f0a42;
+  margin-right: 10px;
+}
+.contact_section .contact_form {
+  width: 40%;
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-main .contact_section .contact_form form {
+.contact_section .contact_form .form_title {
+  margin: 20px auto;
+}
+.contact_section .contact_form .port_form {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.contact_form {
-  width: 30%;
-}
-.contact_form .form_title {
-  margin: 20px auto;
-}
-.contact_form .port_form input[type=text],
-.contact_form .port_form input[type=email] {
+.contact_section .contact_form .port_form input[type=text],
+.contact_section .contact_form .port_form input[type=email] {
   width: 100%;
   margin: 10px auto;
   padding: 15px;
@@ -438,11 +501,11 @@ main .contact_section .contact_form form {
   outline: none;
   border-radius: 4px;
 }
-.contact_form .port_form input[type=text]:focus,
-.contact_form .port_form input[type=email]:focus {
+.contact_section .contact_form .port_form input[type=text]:focus,
+.contact_section .contact_form .port_form input[type=email]:focus {
   border: solid 3px #da99ed;
 }
-.contact_form .port_form textarea {
+.contact_section .contact_form .port_form textarea {
   width: 100%;
   height: 100px;
   margin: 10px auto;
@@ -454,31 +517,31 @@ main .contact_section .contact_form form {
   border-radius: 4px;
   resize: none;
 }
-.contact_form .port_form textarea:focus {
+.contact_section .contact_form .port_form textarea:focus {
   border: solid 3px #da99ed;
 }
-.contact_form .port_form .checkbox {
+.contact_section .contact_form .port_form .checkbox {
   display: flex;
   align-items: center;
   margin: 10px;
   padding: 10px 0;
 }
-.contact_form .port_form .checkbox input[type=checkbox] {
+.contact_section .contact_form .port_form .checkbox input[type=checkbox] {
   opacity: 0;
 }
-.contact_form .port_form .checkbox label::before,
-.contact_form .port_form .checkbox label::after {
+.contact_section .contact_form .port_form .checkbox label::before,
+.contact_section .contact_form .port_form .checkbox label::after {
   content: " ";
   position: absolute;
 }
-.contact_form .port_form .checkbox label::before {
+.contact_section .contact_form .port_form .checkbox label::before {
   height: 16px;
   width: 16px;
   border: 1px solid #98d4eb;
   left: 0px;
   top: 1px;
 }
-.contact_form .port_form .checkbox label::after {
+.contact_section .contact_form .port_form .checkbox label::after {
   height: 4px;
   width: 9px;
   border-left: 2px solid #222222;
@@ -487,7 +550,7 @@ main .contact_section .contact_form form {
   left: 4px;
   top: 5px;
 }
-.contact_form .port_form .checkbox label {
+.contact_section .contact_form .port_form .checkbox label {
   height: auto;
   font-family: 'Roboto', sans-serif;
   font-size: 1.4rem;
@@ -495,16 +558,16 @@ main .contact_section .contact_form form {
   position: relative;
   padding-left: 22px;
 }
-.contact_form .port_form .checkbox input[type="checkbox"] + label::after {
+.contact_section .contact_form .port_form .checkbox input[type="checkbox"] + label::after {
   content: none;
 }
-.contact_form .port_form .checkbox input[type="checkbox"]:checked + label::after {
+.contact_section .contact_form .port_form .checkbox input[type="checkbox"]:checked + label::after {
   content: " ";
 }
-.contact_form .port_form .checkbox input[type="checkbox"]:focus + label::before {
+.contact_section .contact_form .port_form .checkbox input[type="checkbox"]:focus + label::before {
   outline: #da99ed auto 5px;
 }
-.contact_form .port_form .form_buttons {
+.contact_section .contact_form .port_form .form_buttons {
   display: flex;
   justify-content: center;
 }

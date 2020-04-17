@@ -4,19 +4,41 @@ main {
     align-items: center;
 
     .port_intro {
-        width: 75%;
+        width: 50%;
+        margin: 50px auto;
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        h2 {
+            margin-bottom: 10px;
+        };
+
+        h3 {
+            margin-bottom: 20px;
+        };
+
+        p {
+            text-align: center;
+            margin-bottom: 10px;
+        };
     };
 
     .port_featured {
-        width: 95%;
+        width: 100%;
         display: flex;
+        margin-top: 50px;
+        padding: 50px 0;
         flex-direction: column;
         align-items: center;
+        background-color: @light-blue;
+
+        h2 {
+            margin-bottom: 20px;
+        };
 
         .featured_list {
+            width: 90%;
             height: auto;
             display: flex;
             flex-wrap: wrap;
@@ -27,21 +49,42 @@ main {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+
                 .featured_img {
                     width: 100%;
+                    margin-bottom: 20px;
+                    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)
+                };
+
+                h3 {
+                    margin-bottom: 5px;
+                };
+
+                .project_type {
+                    margin-bottom: 10px;
+                };
+
+                .tech_used {
+                    margin-bottom: 20px;
+                    color: @dark-purple;
+                    font-weight: 600;
                 };
             };
         };
     };
 
     .port_tech {
-        width: 95%;
+        width: 100%;
+        height: 250px;
+        margin-bottom: 50px;
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: space-around;
+        background-color: @light-purple;
 
         .tech_list {
-            width: 100%;
+            width: 95%;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -57,28 +100,27 @@ main {
     };
 
     .cta_two {
-        width: 50%;
+        width: 30%;
+        margin: 50px;
         display: flex;
         flex-direction: column;
         align-items: center;
-    };
 
-    .contact_section {
-        width: 95%;
-        display: flex;
-        justify-content: space-around;
+        h2 {
+            margin-bottom: 20px;
+        };
 
-        .contact_form {
-            width: 40%;
+        p {
+            text-align: center;
+            margin: 20px 0;
+        };
+
+        .cta_two_buttons {
             display: flex;
-            flex-direction: column;
+            justify-content: center;
             align-items: center;
-            
-            form {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-            };
+            margin: 20px 0;
         };
     };
+
 };
