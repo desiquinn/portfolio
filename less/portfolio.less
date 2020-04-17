@@ -49,13 +49,17 @@ main {
     };
 
     .port_tech {
-        width: 95%;
+        width: 100%;
+        height: 250px;
+        margin: 50px 0;
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: space-around;
+        background-color: @light-purple;
 
         .tech_list {
-            width: 100%;
+            width: 95%;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -71,28 +75,27 @@ main {
     };
 
     .cta_two {
-        width: 50%;
+        width: 30%;
+        margin: 50px;
         display: flex;
         flex-direction: column;
         align-items: center;
-    };
 
-    .contact_section {
-        width: 95%;
-        display: flex;
-        justify-content: space-around;
+        h2 {
+            margin-bottom: 20px;
+        };
 
-        .contact_form {
-            width: 40%;
+        p {
+            text-align: center;
+            margin: 20px 0;
+        };
+
+        .cta_two_buttons {
             display: flex;
-            flex-direction: column;
+            justify-content: center;
             align-items: center;
-            
-            form {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-            };
+            margin: 20px 0;
         };
     };
+
 };
