@@ -205,6 +205,9 @@ p {
   color: #222222;
   font-size: 1.4rem;
 }
+p strong {
+  font-weight: 600;
+}
 a {
   text-decoration: none;
   font-family: 'Roboto', sans-serif;
@@ -602,10 +605,27 @@ main .cta_two .cta_two_buttons {
   justify-content: center;
 }
 .hire_me {
+  height: 315px;
   text-align: center;
+  margin-top: 100px;
+}
+.hire_me h1 {
+  margin-bottom: 50px;
+}
+.hire_me p {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
 }
 .new_project {
+  height: 315px;
   text-align: center;
+  margin-top: 100px;
+}
+.new_project h1 {
+  margin-bottom: 50px;
+}
+.new_project p {
+  font-size: 1.8rem;
 }
 footer {
   height: 200px;
