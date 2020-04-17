@@ -25,12 +25,20 @@ main {
     };
 
     .port_featured {
-        width: 95%;
+        width: 100%;
         display: flex;
+        margin-top: 50px;
+        padding: 50px 0;
         flex-direction: column;
         align-items: center;
+        background-color: @light-blue;
+
+        h2 {
+            margin-bottom: 20px;
+        };
 
         .featured_list {
+            width: 90%;
             height: auto;
             display: flex;
             flex-wrap: wrap;
@@ -41,8 +49,25 @@ main {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+
                 .featured_img {
                     width: 100%;
+                    margin-bottom: 20px;
+                    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)
+                };
+
+                h3 {
+                    margin-bottom: 5px;
+                };
+
+                .project_type {
+                    margin-bottom: 10px;
+                };
+
+                .tech_used {
+                    margin-bottom: 20px;
+                    color: @dark-purple;
+                    font-weight: 600;
                 };
             };
         };
@@ -51,7 +76,7 @@ main {
     .port_tech {
         width: 100%;
         height: 250px;
-        margin: 50px 0;
+        margin-bottom: 50px;
         display: flex;
         flex-direction: column;
         align-items: center;
