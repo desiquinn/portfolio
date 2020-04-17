@@ -34,6 +34,14 @@
     color: #98d4eb;
   }
 }
+@keyframes linkhover2 {
+  from {
+    color: #222222;
+  }
+  to {
+    color: #da99ed;
+  }
+}
 @keyframes buttonhover {
   from {
     background-color: #2f0a42;
@@ -198,6 +206,7 @@ p {
   font-size: 1.4rem;
 }
 a {
+  text-decoration: none;
   font-family: 'Roboto', sans-serif;
   color: #222222;
   font-size: 1.6rem;
@@ -393,13 +402,34 @@ main .port_featured .featured_list .featured_item {
   flex-direction: column;
   align-items: center;
 }
-main .port_featured .featured_list .featured_item .featured_img {
+main .port_featured .featured_list .featured_item a .featured_img {
   width: 100%;
   margin-bottom: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
+main .port_featured .featured_list .featured_item .code_link {
+  color: #fe4a49;
+  align-self: flex-start;
+  margin-top: 20px;
+}
+main .port_featured .featured_list .featured_item .code_link:hover {
+  color: #da99ed;
+  animation-name: linkhover2;
+  animation-duration: 0.5s;
+}
 main .port_featured .featured_list .featured_item h3 {
   margin-bottom: 5px;
+}
+main .port_featured .featured_list .featured_item h3 a {
+  font-family: 'Roboto', sans-serif;
+  color: #222222;
+  font-size: 2rem;
+  font-weight: 700;
+}
+main .port_featured .featured_list .featured_item h3 a:hover {
+  color: #da99ed;
+  animation-name: linkhover2;
+  animation-duration: 0.5s;
 }
 main .port_featured .featured_list .featured_item .project_type {
   margin-bottom: 10px;
