@@ -376,7 +376,7 @@ header .hero .tag_line p {
 @media (max-width: 500px) {
   header .hero {
     flex-direction: column;
-    height: 700px;
+    height: 800px;
   }
   header .hero .big_desi {
     width: 30%;
@@ -391,6 +391,9 @@ header .hero .tag_line p {
     width: 90%;
     min-width: 0;
     text-align: center;
+  }
+  header .hero .tag_line h1 {
+    font-size: 4.3rem;
   }
 }
 .home_page {
