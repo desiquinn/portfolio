@@ -16,7 +16,7 @@ header {
         };
 
         .nav_links {
-            width: 50%;
+            width: 75%;
             display: flex;
             justify-content: space-around;
             align-items: center;
@@ -24,6 +24,65 @@ header {
             a {
                 text-decoration: none;
                 text-transform: uppercase;
+            };
+
+            @media (max-width: @tablet) {
+                // display: none;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-around;
+                margin-top: 475px;
+                width: 100%;
+                height: 400px;
+                z-index: 1000;
+                // border: solid 1px @white;
+                background-color: rgba(255, 255, 255, 0.7);
+                
+                a {
+                    // color: @black;
+                    font-size: 2rem;
+                };
+            };
+        };
+
+        .burger {
+            display: none;
+
+            .bar {
+                width: 40px;
+                margin: 5px;
+                border: solid 3px @black;
+                border-radius: 10px;
+                transition: 0.8s;
+            };
+
+            @media (max-width: @tablet) {
+                display: flex;
+                margin-right: 30px;
+                flex-direction: column;
+            };
+        };
+
+        .change_burger {
+            .bar1 {
+                transform: rotate(-45deg) translate(-9px, 6px);
+                // transition: transform .5s;
+            };
+    
+            .bar2 {
+                opacity: 0;
+                // transition: opacity .5s;
+            };
+    
+            .bar3 {
+                transform: rotate(45deg) translate(-8px, -8px);
+                // transition: transform .5s;
+            };
+        };
+
+        @media (max-width: @tablet) {
+            .drop_down {
+                display: none;
             };
         };
     };
