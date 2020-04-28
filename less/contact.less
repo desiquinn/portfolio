@@ -23,6 +23,10 @@
                 margin-right: 10px;
             };
         };
+
+        @media (max-width: @mobile) {
+            width: 90%
+        };
     };
 
     .contact_form {
@@ -42,5 +46,15 @@
             justify-content: center;
             .form_style();
         };
+
+        @media (max-width: @mobile) {
+            width: 90%
+        };
+    };
+
+    @media (max-width: @mobile) {
+        flex-direction: column;
+        align-items: center;
+        // justify-content: center;
     };
 };
