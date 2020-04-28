@@ -373,10 +373,10 @@ header .hero .tag_line p {
   flex-direction: column;
   color: #FFFFFF;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   header .hero {
     flex-direction: column;
-    height: 800px;
+    height: 900px;
   }
   header .hero .big_desi {
     width: 30%;
@@ -423,6 +423,35 @@ header .hero .tag_line p {
   font-size: 2rem;
   font-weight: 600;
   margin-bottom: 5px;
+}
+@media (max-width: 800px) {
+  .cta_one .cta_text .value {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+}
+@media (max-width: 800px) {
+  .cta_one .cta_text {
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  .cta_one .cta_text {
+    margin-right: auto;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}
+@media (max-width: 800px) {
+  .cta_one {
+    padding: 0 5%;
+  }
+}
+@media (max-width: 500px) {
+  .cta_one {
+    flex-direction: column;
+    height: 250px;
+  }
 }
 main {
   display: flex;
