@@ -346,7 +346,9 @@ header .hero {
   align-items: center;
 }
 header .hero .big_desi {
-  height: 500px;
+  width: 28%;
+  min-width: 280px;
+  min-height: 400px;
 }
 header .hero .tag_line {
   margin-top: 215px;
@@ -355,6 +357,7 @@ header .hero .tag_line {
   border-right: 5px solid #98d4eb;
   height: 255px;
   width: 30%;
+  min-width: 347px;
   text-align: right;
 }
 header .hero .tag_line h1 {
@@ -369,6 +372,26 @@ header .hero .tag_line p {
   display: flex;
   flex-direction: column;
   color: #FFFFFF;
+}
+@media (max-width: 500px) {
+  header .hero {
+    flex-direction: column;
+    height: 700px;
+  }
+  header .hero .big_desi {
+    width: 30%;
+    height: auto;
+    margin-top: 20px;
+  }
+  header .hero .tag_line {
+    margin-top: 50px;
+    margin-right: 0;
+    padding-right: 0;
+    border-right: 0;
+    width: 90%;
+    min-width: 0;
+    text-align: center;
+  }
 }
 .home_page {
   height: 550px;
