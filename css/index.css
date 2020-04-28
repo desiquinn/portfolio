@@ -281,7 +281,7 @@ header .nav_bar .logo {
   height: auto;
 }
 header .nav_bar .nav_links {
-  width: 50%;
+  width: 75%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -289,6 +289,52 @@ header .nav_bar .nav_links {
 header .nav_bar .nav_links a {
   text-decoration: none;
   text-transform: uppercase;
+}
+@media (max-width: 800px) {
+  header .nav_bar .nav_links {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 475px;
+    width: 100%;
+    height: 400px;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+  header .nav_bar .nav_links a {
+    font-size: 2rem;
+  }
+}
+header .nav_bar .burger {
+  display: none;
+}
+header .nav_bar .burger .bar {
+  width: 40px;
+  margin: 5px;
+  border: solid 3px #222222;
+  border-radius: 10px;
+  transition: 0.8s;
+}
+@media (max-width: 800px) {
+  header .nav_bar .burger {
+    display: flex;
+    margin-right: 30px;
+    flex-direction: column;
+  }
+}
+header .nav_bar .change_burger .bar1 {
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+header .nav_bar .change_burger .bar2 {
+  opacity: 0;
+}
+header .nav_bar .change_burger .bar3 {
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+@media (max-width: 800px) {
+  header .nav_bar .drop_down {
+    display: none;
+  }
 }
 header .hero {
   background-image: url(../img/purple_brick_bg.png);
@@ -300,7 +346,9 @@ header .hero {
   align-items: center;
 }
 header .hero .big_desi {
-  height: 500px;
+  width: 28%;
+  min-width: 280px;
+  min-height: 400px;
 }
 header .hero .tag_line {
   margin-top: 215px;
@@ -309,6 +357,7 @@ header .hero .tag_line {
   border-right: 5px solid #98d4eb;
   height: 255px;
   width: 30%;
+  min-width: 347px;
   text-align: right;
 }
 header .hero .tag_line h1 {
@@ -323,6 +372,26 @@ header .hero .tag_line p {
   display: flex;
   flex-direction: column;
   color: #FFFFFF;
+}
+@media (max-width: 500px) {
+  header .hero {
+    flex-direction: column;
+    height: 700px;
+  }
+  header .hero .big_desi {
+    width: 30%;
+    height: auto;
+    margin-top: 20px;
+  }
+  header .hero .tag_line {
+    margin-top: 50px;
+    margin-right: 0;
+    padding-right: 0;
+    border-right: 0;
+    width: 90%;
+    min-width: 0;
+    text-align: center;
+  }
 }
 .home_page {
   height: 550px;
