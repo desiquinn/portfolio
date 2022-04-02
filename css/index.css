@@ -3,28 +3,28 @@
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/playfairdisplay/v20/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKeiukDQ.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/playfairdisplay/v28/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKeiukDQ.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Roboto';
   font-style: italic;
   font-weight: 300;
   font-display: swap;
-  src: local('Roboto Light Italic'), local('Roboto-LightItalic'), url(https://fonts.gstatic.com/s/roboto/v20/KFOjCnqEu92Fr1Mu51TjARc9.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/roboto/v29/KFOjCnqEu92Fr1Mu51TjARc9.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Me5Q.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/roboto/v29/KFOmCnqEu92Fr1Me5Q.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmWUlvAw.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/roboto/v29/KFOlCnqEu92Fr1MmWUlvAw.ttf) format('truetype');
 }
 @keyframes linkhover {
   from {
@@ -778,15 +778,10 @@ main .cta_two .cta_two_buttons {
   margin-bottom: 10px;
 }
 .new_project {
-  height: 315px;
-  text-align: center;
   margin-top: 100px;
 }
-.new_project h1 {
-  margin-bottom: 50px;
-}
-.new_project p {
-  font-size: 1.8rem;
+.log_in {
+  margin-top: 100px;
 }
 footer {
   height: 200px;
